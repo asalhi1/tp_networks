@@ -6,3 +6,4 @@ the addressing plan is authoritative in `data/vlans.yml`.
 
 Local check: `python3 scripts/check_vlans.py` from the repository root.
 
+IPv6 prefix: fd9b:63af:5b8e::/48
