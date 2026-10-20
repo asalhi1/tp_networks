@@ -1,0 +1,17 @@
+graph LR
+    subgraph LOCA ["Technical room A, building A"]
+        CCA["CC-A"]
+        UPSA["UPS A"]
+    end
+
+    subgraph LOCB ["Technical room B, building B"]
+        CCB["CC-B"]
+        UPSB["UPS B"]
+    end
+
+    UPSA --- CCA
+    UPSB --- CCB
+
+    CCA ---|"Route 1: North Technical Gallery"| JNC["Central Trench (Under Courtyard)"]
+    CCA ---|"Route 2: South Outer Façade"| JNC
+    JNC --- CCB

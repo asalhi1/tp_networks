@@ -1,0 +1,11 @@
+flowchart LR
+    subgraph SiteA ["Building A (Head Office & IT)"]
+        CC-A["CC-A"]
+    end
+
+    subgraph SiteB ["Building B (Production)"]
+        CC-B["CC-B"]
+    end
+
+    CC-A ===|"Distributed Link (Fiber Route 1)"| CC-B
+    CC-A ===|"Distributed Link (Fiber Route 2)"| CC-B
